@@ -1,6 +1,7 @@
 import fresh_tomatoes
 import media
 
+"""Creating several Movie instances with data"""
 interstellar = media.Movie("Interstellar",
                         "The story of a man and the starts",
                         "http://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
@@ -21,6 +22,7 @@ avatar = media.Movie("Avatar",
                         )
 
 
+"""Putting all Movie instances inside a list to be used by open_movies_page function"""
 movies = [interstellar, toy_story, avatar]
 
 fresh_tomatoes.open_movies_page(movies)
