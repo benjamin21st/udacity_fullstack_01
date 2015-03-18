@@ -1,6 +1,12 @@
 import fresh_tomatoes
 import media
 
+interstellar = media.Movie("Interstellar",
+                        "The story of a man and the starts",
+                        "http://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+                        "https://www.youtube.com/watch?v=zSWdZVtXT7E"
+                        )
+
 toy_story = media.Movie("Toy Story",
                         "A story of toys",
                         "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
@@ -15,8 +21,6 @@ avatar = media.Movie("Avatar",
                         )
 
 
-movies = [toy_story, avatar]
+movies = [interstellar, toy_story, avatar]
 
-# fresh_tomatoes.open_movies_page(movies)
-for i in movies:
-    print(i.__doc__)
+fresh_tomatoes.open_movies_page(movies)
